@@ -2,7 +2,11 @@ import React from 'react';
 import { COUNCILS_DATA } from '../constants';
 import { Council } from '../types';
 
-const CouncilTable: React.FC = () => {
+interface CouncilTableProps {
+  onCouncilClick: (council: Council) => void;
+}
+
+const CouncilTable: React.FC<CouncilTableProps> = ({ onCouncilClick }) => {
   return (
     <div className="w-full bg-white dark:bg-slate-800/80 backdrop-blur-sm rounded-xl shadow-2xl overflow-hidden ring-1 ring-black ring-opacity-5">
       <div className="overflow-x-auto">
@@ -20,7 +24,8 @@ const CouncilTable: React.FC = () => {
             {COUNCILS_DATA.map((council: Council, index: number) => (
               <tr 
                 key={council.id} 
-                className="hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-colors duration-200 animate-fade-in-up"
+                onClick={() => onCouncilClick(council)}
+                className="hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-colors duration-200 animate-fade-in-up cursor-pointer"
                 style={{ animationDelay: `${index * 30}ms` }}
               >
                 <td className="px-4 py-4 text-center font-mono font-medium text-slate-700 dark:text-slate-300">

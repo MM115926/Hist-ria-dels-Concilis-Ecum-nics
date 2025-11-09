@@ -6,7 +6,7 @@ const Header: React.FC = () => {
       className="text-center p-6 rounded-xl bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm shadow-lg animate-fade-in-up"
       style={{ animationDelay: '100ms' }}
     >
-      <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight bg-gradient-to-r from-sky-600 to-indigo-600 dark:from-sky-400 dark:to-indigo-400 bg-clip-text text-transparent">
+      <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 dark:text-slate-100">
         Història dels Concilis de l'Església
       </h1>
       <p className="mt-4 text-lg text-slate-600 dark:text-slate-300 max-w-3xl mx-auto">
