@@ -41,7 +41,7 @@ const App: React.FC = () => {
           <CouncilTable />
         </section>
         <footer className="text-center mt-16 py-4 text-sm text-slate-500 dark:text-slate-400 animate-fade-in-up" style={{ animationDelay: '900ms' }}>
-          <p>Fet per Miquel López i Denis Mendoza</p>
+          <p>Fet per Miquel López i Denís Mendoza</p>
         </footer>
       </div>
     </div>
